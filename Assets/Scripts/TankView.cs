@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class TankView : MonoBehaviour
 {
-    public  TankController tankController;
+    public TankController tankController;
     private float movement;
     private float rotate;
-    public Rigidbody rb; 
+    public Rigidbody rb;
+    public MeshRenderer[] childs;   
     public void Start()
     {
         GameObject cam = GameObject.Find("Main Camera");
@@ -38,5 +39,12 @@ public class TankView : MonoBehaviour
     public Rigidbody GetRigidbody()
     {
         return rb;
+    }
+    public void ChangeColor(Material color)
+    {
+        for(int i = 0; i < childs.Length; i++)
+        {
+            childs[i].material = color;
+        }
     }
 }

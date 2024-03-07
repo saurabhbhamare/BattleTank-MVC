@@ -154,6 +154,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tankView: {fileID: -1424257513862519177, guid: 8cfa87982ce2b2e42a18df211dd750af,
     type: 3}
+  tankList:
+  - movementSpeed: 10
+    rotateSpeed: 10
+    tankType: 0
+    color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
+  - movementSpeed: 40
+    rotateSpeed: 40
+    tankType: 1
+    color: {fileID: 2100000, guid: 12c120f2400576c4f97a98bcca5529bc, type: 2}
+  - movementSpeed: 100
+    rotateSpeed: 100
+    tankType: 2
+    color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
 --- !u!4 &714521038
 Transform:
   m_ObjectHideFlags: 0
