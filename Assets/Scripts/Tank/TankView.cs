@@ -8,7 +8,9 @@ public class TankView : MonoBehaviour
     private float movement;
     private float rotate;
     public Rigidbody rb;
-    public MeshRenderer[] childs;   
+    public MeshRenderer[] childs;
+    public Transform shellSpawnPoint;
+ 
     public void Start()
     {
         GameObject cam = GameObject.Find("Main Camera");
@@ -26,10 +28,15 @@ public class TankView : MonoBehaviour
         {
             tankController.Rotate(rotate, tankController.GetTankModel().rotateSpeed);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+         tankController.FireBullet(shellSpawnPoint);
+        }     
     }
     public void SetTankController(TankController _tankController)
     {
         tankController = _tankController;
+        Debug.Log("bullet fired");
     }
     void Movement()
     {

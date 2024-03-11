@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class TankController 
 {
+    private BulletSpawner bullet;
     public TankModel tankModel;
     public TankView tankView;
     private Rigidbody rb; 
-    public TankController(TankModel _tankModel , TankView _tankView )
+    public TankController(TankModel _tankModel , TankView _tankView , BulletSpawner _bullet )
     {
+        this.bullet = _bullet;
         tankModel = _tankModel;
        tankView = GameObject.Instantiate<TankView>(_tankView);
        rb = tankView.GetRigidbody();
@@ -31,5 +33,9 @@ public class TankController
     {
         return tankModel;
     } 
+    public void FireBullet(Transform fireTransform)
+    {
+        BulletController bulletController = new BulletController(bullet,fireTransform);
+    }
 
 }

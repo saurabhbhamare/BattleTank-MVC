@@ -5,6 +5,8 @@ public class TankModel
     public float rotateSpeed;
     public TankTypes tankType;
     public Material color;
+    public float fireDelay;
+    public float shellForce; // Force at which shell is fired 
 
     public TankController tankController;
     public TankModel(float _movementSpeed, float _rotateSpeed,TankTypes tank, Material _color)
@@ -12,11 +14,14 @@ public class TankModel
         movementSpeed = _movementSpeed;
         rotateSpeed = _rotateSpeed;
         tankType = tank;
-        color = _color; 
-
+        color = _color;
     }
   public void SetTankController(TankController _tankController)
     {
         tankController = _tankController;
+    }
+    public float GetFireDelay()
+    {
+        return fireDelay;
     }
 }
