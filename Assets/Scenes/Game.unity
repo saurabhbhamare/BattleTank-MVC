@@ -388,22 +388,22 @@ MonoBehaviour:
   tankView: {fileID: -1424257513862519177, guid: 8cfa87982ce2b2e42a18df211dd750af,
     type: 3}
   tankList:
-  - movementSpeed: 40
-    rotateSpeed: 60
+  - movementSpeed: 48
+    rotateSpeed: 70
     tankType: 0
     color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
     bulletSpawner:
       bulletView: {fileID: -3155656377796158153, guid: 8e28faae2fbc64345998c8cc79054152,
         type: 3}
-      bulletSpeed: 40
+      bulletSpeed: 80
   - movementSpeed: 60
-    rotateSpeed: 80
+    rotateSpeed: 90
     tankType: 1
     color: {fileID: 2100000, guid: 12c120f2400576c4f97a98bcca5529bc, type: 2}
     bulletSpawner:
       bulletView: {fileID: -3155656377796158153, guid: 8e28faae2fbc64345998c8cc79054152,
         type: 3}
-      bulletSpeed: 40
+      bulletSpeed: 80
   - movementSpeed: 70
     rotateSpeed: 200
     tankType: 2
@@ -411,7 +411,7 @@ MonoBehaviour:
     bulletSpawner:
       bulletView: {fileID: -3155656377796158153, guid: 8e28faae2fbc64345998c8cc79054152,
         type: 3}
-      bulletSpeed: 40
+      bulletSpeed: 140
 --- !u!4 &714521038
 Transform:
   m_ObjectHideFlags: 0
